@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.875rem 0;
+
+}
+div.author-img {
+  max-width: 35%;
+}
+
+div.author-img img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+div.author-img img:hover {
+  scale: 1.05;
+  border: solid 4px hsl(25, 53%, 71%);
+}
+
+.details {
+  border-top: solid 5px hsl(25, 53%, 71%);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em 1.3em;
+  border-bottom: solid 5px hsl(25, 53%, 71%);
+  box-shadow: 0px 2px 3px hsl(25, 53%, 71%, .3);
+
+
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links a {
+  color: hsl(25, 53%, 71%);
+  cursor: pointer;
+  border: solid 2px hsl(25, 53%, 71%);
+  padding: .5em 1em;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+
+}
+.links a:hover {
+  background-color: hsl(25, 53%, 71%);
+  color: #fff;
+  scale: 1.05;
+}
+
+span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: hsl(25, 53%, 71%);
+  transition: all 0.3s ease;
+}
+
+/*  */
+.author-goal {
+  margin: 30px 0;
+  text-align: center;
+  list-style: inside;
+  padding: 1, 3em auto;
+}
+
+
+.author-detail {
+  margin-bottom: 1.2em;
+
+}
+
+/* @media screen  */
+@media screen and (max-width: 854px) {
+  .header-section {
+    padding: 2rem 0;
+    text-align: start;
+    gap: 0.5rem;
+    flex-direction: column-reverse;
+  }
+  h1 {
+    font-size: 28px;
+  }
+
+  .details {
+    width: 90%;
+  }
+
+  .details h3 {
+    font-size: 1.3rem;
+  }
+  h3 > span {
+    font-size: 1.2rem;
+    color: purple;
+    font-style: italic;
+    font-weight: 700;
+  }
+  section.my-goals h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 13px;
+    color: gray;
+    text-align: start;
+    padding: 1em;
+   
+  }
+  div.author-img {
+    max-width: 100%;
+    padding-inline: 2rem;
+  }
+  div.author-img img {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  section.my-goals p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h3 > span {
+    font-size: 0.9rem;
+  }
+  .details h3 {
+    font-size: 1.2rem;
+  }
+  section.my-goals p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  h1 {
+    font-size: 20px;
+  }
+  .details {
+    gap: 0.5rem;
+    width: 100%;
+  }
+  div.profile-img {
+    max-width: 100%;
+    padding-inline: 0;
+  }
+
+  h3 > span {
+    font-size: 0.8rem;
+  }
+
+  .details h3 {
+    font-size: 0.9rem;
+  }
+
+  section.my-goals h2 {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  section.my-goals p {
+    font-size: 0.8rem;
+  }
+}
+
